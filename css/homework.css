@@ -1,0 +1,232 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-italic - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500italic - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+  body {
+    font-family: 'Roboto';
+    color: black;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Header styles start*/
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007765;
+  }
+  .header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 55px;
+  }
+  .header_item {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-right: 12px;
+    padding-bottom: 9px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color:white;
+  }
+  .header_link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color:white;
+    text-decoration: none;
+    transition: .2s;
+  }
+  .header_link:hover {
+    opacity: .75;
+  }
+/*Header styles end*/
+
+/*Intro styles start*/
+.intro_head {
+  background: url(../img/intro.jpg) no-repeat center;
+  background-size: cover;
+  padding: 200px 0 160px 0 ;
+}
+.intro_title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  color: white;
+}
+/*Intro styles end*/
+
+/*Problem styles start*/
+.problem {
+  background: #EEEEEE;
+  padding-top: 48px;
+  padding-bottom: 92px;
+}
+.problem_title {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #007765;
+  margin-bottom: 16px;
+}
+.problem_text-paragraph {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+.problem_text-paragraph-bold {
+  font-weight: 700;
+}
+/*Problem styles end*/
+
+/*Quote styles start*/
+.quote_text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+  background: url(../img/quote.jpg) no-repeat center;
+  background-size: cover;
+  padding: 140px 250px;
+}
+/*Quote styles end*/
+
+/*Introduction styles start*/
+.introduction {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  background: white;
+}
+.introduction_title {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #007765;
+  margin-bottom: 30px;
+}
+.introduction_logo {
+  float: left;
+  padding: 0 48px 35px 0;
+}
+.introduction_paragraph {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+.introduction_paragraph-italic {
+  font-style: italic;
+}
+/*Introduction styles end*/
+
+/*Team styles start*/
+.team {
+  background: #EEEEEE;
+  align-items: center;
+}
+.team_title {
+  padding-top: 48px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  margin-bottom: 60px;
+}
+.team_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 130px;
+  grid-row-gap: 80px;
+  padding: 0 0 90px 160px;
+}
+.team_card {
+  grid-column: span 1;
+}
+.team_card-pic {
+  width: 200px;
+  margin-bottom: 15px;
+}
+.team_card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+  margin-bottom: 10px;
+}
+.team_card-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+/*Team styles end*/
+
+.footer_text {
+  padding: 65px 400px;
+  background: #333333;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
